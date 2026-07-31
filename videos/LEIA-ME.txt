@@ -1,0 +1,10 @@
+Pasta de vídeos — status do material real.
+
+JÁ INTEGRADOS AO SITE:
+
+- hero.mp4          → vídeo institucional do hero ("primeira impressão")
+- para-quem-e.mp4    → vídeo de apoio na seção "Para quem é" (poster: ../images/para-quem-e.jpg)
+
+Ambos tocam mudos, em loop, com autoplay. Se o arquivo não carregar por
+qualquer motivo, o site cai automaticamente para um estado visual de
+fallback (marca + texto no hero; a foto de poster no vídeo de "Para quem é").

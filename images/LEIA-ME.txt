@@ -1,0 +1,25 @@
+Pasta de imagens — status do material real.
+
+JÁ INTEGRADOS AO SITE (vieram de BRAND MANAGEMENT\TATIANA MURARI _CLIENT\IMAGENS SITE,
+redimensionados/comprimidos para web):
+
+- logo-offwhite.svg          → logo (versão off-white, usada no header/footer verde-escuro)
+- logo-darkgreen.svg         → logo (versão verde-escuro, para uso sobre fundo claro,
+                                 disponível caso precise em materiais futuros)
+- icon-mark.png               → ícone isolado da marca (arquivo original, alta resolução)
+- favicon.png                 → ícone recortado em quadrado 512x512 a partir do icon mark
+- tatiana-retrato.jpg         → seção Sobre
+- consultorio-contato.jpg     → seção Contato
+- beneficios-motricidade.jpg  → seção Benefícios
+- para-quem-e.jpg             → poster do vídeo na seção "Para quem é"
+- textura-marca.jpg           → fundo da seção Benefícios (seção de destaque verde-escuro)
+
+AINDA PENDENTE:
+
+- og-share.jpg → imagem de compartilhamento social (1200x630px), para Open Graph/WhatsApp.
+                  Sugestão: usar o retrato da Tatiana ou o ícone da marca sobre fundo
+                  verde-escuro (#335952).
+
+Formatos: as fotos foram salvas em JPG otimizado (~100-175KB cada, reduzidas de
+fotos originais de 1-9MB). Se quiser ainda mais performance, converta para WebP
+com uma ferramenta de build (este projeto não usa Node/bundler).
