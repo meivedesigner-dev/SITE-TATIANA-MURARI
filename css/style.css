@@ -1959,6 +1959,10 @@ ul.contact-notes {
     display: inline;
   }
 
+  .para-quem-break-desktop {
+    display: none;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
