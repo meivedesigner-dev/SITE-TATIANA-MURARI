@@ -658,6 +658,10 @@ textarea:focus-visible,
   max-width: 750px;
 }
 
+.hero-title-break-mobile {
+  display: none;
+}
+
 .hero-video .video-player {
   border-radius: 15px;
 }
@@ -1949,6 +1953,10 @@ ul.contact-notes {
   .hero-headline-wrap {
     padding-top: calc(var(--header-h) + 1.25rem);
     padding-bottom: 1.5rem;
+  }
+
+  .hero-title-break-mobile {
+    display: inline;
   }
 
   .hero-actions {
