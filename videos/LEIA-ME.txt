@@ -1,10 +1,16 @@
 Pasta de vídeos — status do material real.
 
-JÁ INTEGRADOS AO SITE:
+- para-quem-e.mp4 → vídeo de apoio na seção "Para quem é" (poster:
+  ../images/para-quem-e.jpg). Toca mudo, em loop, com autoplay. Se o
+  arquivo não carregar, o site cai automaticamente para a foto de poster.
 
-- hero.mp4          → vídeo institucional do hero ("primeira impressão")
-- para-quem-e.mp4    → vídeo de apoio na seção "Para quem é" (poster: ../images/para-quem-e.jpg)
+- hero.mp4 → NÃO ESTÁ MAIS EM USO. O hero passou a usar um player do
+  YouTube (vídeo com áudio, com botão de play) em vez do vídeo mudo de
+  fundo. O arquivo continua nesta pasta, mas pode ser removido com
+  segurança se quiser liberar espaço.
 
-Ambos tocam mudos, em loop, com autoplay. Se o arquivo não carregar por
-qualquer motivo, o site cai automaticamente para um estado visual de
-fallback (marca + texto no hero; a foto de poster no vídeo de "Para quem é").
+Vídeos do YouTube usados no site (via player "lite embed", ver
+js/app.js → initYoutubePlayers):
+- Hero: https://youtu.be/ssuc8h80zw8
+- Como funciona: https://youtu.be/VnvF2Zv__ww
+- Recursos fonoaudiológicos: https://youtu.be/WaBvXv-ss_0

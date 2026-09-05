@@ -247,20 +247,15 @@
 
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
-        <a href="#especialidades">Especialidades</a>
         <a href="#para-quem">Para quem é</a>
+        <a href="#especialidades">Especialidades</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#beneficios">Benefícios</a>
-        <a href="#resultados">Resultados</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-ghost-light" href="tel:+5511942626054" data-tel>
-          <svg aria-hidden="true"><use href="#icon-phone"/></svg>
-          <span data-phone-text>(11) 94262-6054</span>
-        </a>
         <a
           class="btn btn-invert"
           href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
@@ -287,8 +282,8 @@
   <div class="nav-drawer" id="nav-drawer">
     <nav aria-label="Navegação mobile">
       <a href="#inicio">Início</a>
-      <a href="#especialidades">Especialidades</a>
       <a href="#para-quem">Para quem é</a>
+      <a href="#especialidades">Especialidades</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#beneficios">Benefícios</a>
       <a href="#resultados">Resultados</a>
@@ -315,40 +310,60 @@
          Hero
          ========================================================== -->
     <section class="hero" id="inicio" aria-label="Apresentação">
-      <div class="hero-media">
-        <video
-          data-hero-video
-          muted
-          loop
-          playsinline
-          autoplay
-          preload="auto"
-          aria-hidden="true"
+      <div class="hero-green-bg" aria-hidden="true"></div>
+
+      <div class="hero-narrow hero-headline-wrap">
+        <h1 class="hero-title">A linguagem é a premissa da fala.<br />A&nbsp;expressão, seu resultado.</h1>
+      </div>
+
+      <div class="hero-narrow hero-video">
+        <div
+          class="video-player"
+          data-yt-player="ssuc8h80zw8"
+          data-yt-title="Apresentação em vídeo de Tatiana Murari"
         >
-          <source src="videos/hero.mp4" type="video/mp4" />
-        </video>
-        <div class="media-placeholder" data-hero-fallback>
-          <img src="images/icon-mark.png" alt="" class="hero-fallback-mark" />
-          <span>Tatiana Murari Fonoaudiologia Infantil</span>
+          <img
+            class="video-player-thumb"
+            src="https://i.ytimg.com/vi/ssuc8h80zw8/hqdefault.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <button class="video-player-btn" type="button" aria-label="Reproduzir vídeo: apresentação de Tatiana Murari">
+            <span class="play-circle">
+              <svg aria-hidden="true"><use href="#icon-play"/></svg>
+            </span>
+          </button>
         </div>
       </div>
 
-      <div class="hero-content">
-        <div class="container">
-          <span class="chip">
-            <span class="dot" aria-hidden="true"></span>
-            Fonoaudiologia Infantil · Vila Leopoldina, SP
-          </span>
+      <div class="hero-narrow hero-actions">
+        <a
+          class="btn hero-cta"
+          href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
+          data-wa
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="btn-icon" src="images/whatsapp-white-icon.webp" alt="" width="24" height="24" />
+          Agendar avaliação
+        </a>
+        <p class="hero-text">
+          Avaliação individualizada e acompanhamento próximo da família.
+        </p>
+      </div>
+    </section>
 
-          <h1 class="hero-title">A linguagem é a premissa da fala. A&nbsp;expressão, seu resultado.</h1>
-
-          <p class="hero-text">
-            Avaliação individualizada e acompanhamento próximo da família.
-          </p>
-
-          <div class="hero-actions">
+    <!-- ==========================================================
+         Para quem é
+         ========================================================== -->
+    <section class="section" id="para-quem" aria-labelledby="para-quem-title">
+      <div class="container">
+        <div class="card-grid" data-reveal-group>
+          <div class="para-quem-intro" data-reveal>
+            <h2 id="para-quem-title" class="para-quem-heading">Para<br />quem é?</h2>
+            <p class="para-quem-sub">Você reconhece alguma dessas situações?</p>
             <a
-              class="btn btn-lg"
+              class="btn"
               href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
               data-wa
               target="_blank"
@@ -357,22 +372,55 @@
               <img class="btn-icon" src="images/whatsapp-white-icon.webp" alt="" width="24" height="24" />
               Agendar avaliação
             </a>
-            <a class="btn btn-lg btn-ghost-light" href="#especialidades">
-              Conhecer o atendimento
-            </a>
           </div>
 
-          <div class="hero-meta">
-            <span class="chip"><span class="dot" aria-hidden="true"></span>Atendimento 100% presencial</span>
-            <span class="chip"><span class="dot" aria-hidden="true"></span>Crianças de 3 a 10 anos</span>
-            <span class="chip"><span class="dot" aria-hidden="true"></span>Vila Leopoldina, São Paulo</span>
-          </div>
+          <article class="card" data-reveal>
+            <span class="card-icon"><svg aria-hidden="true"><use href="#icon-cap"/></svg></span>
+            <h3>Queixa da escola</h3>
+            <p>
+              Seu filho tem entre 3 e 10 anos e a escola sinalizou alguma dificuldade relacionada à
+              fala, à comunicação ou ao desenvolvimento da linguagem, indicando a importância de uma
+              avaliação fonoaudiológica.
+            </p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card-icon terracotta"><svg aria-hidden="true"><use href="#icon-shuffle"/></svg></span>
+            <h3>Trocas na fala</h3>
+            <p>
+              Crianças que já falam e se comunicam, mas podem trocar alguns sons das palavras,
+              deixando a fala diferente do esperado para a idade.
+            </p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card-icon slate"><svg aria-hidden="true"><use href="#icon-clock"/></svg></span>
+            <h3>Atraso na fala e na linguagem</h3>
+            <p>
+              Crianças que estão demorando mais para começar a falar, apresentam poucas palavras
+              para a idade ou ainda têm dificuldade para formar frases e se comunicar.
+            </p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card-icon"><svg aria-hidden="true"><use href="#icon-wind"/></svg></span>
+            <h3>Alterações de motricidade orofacial</h3>
+            <p>
+              Crianças com dificuldades nos movimentos e funções da boca, como sucção, mastigação,
+              respiração, deglutição ou controle de língua e lábios, que podem estar relacionadas a
+              alterações na fala e em outras funções orais.
+            </p>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card-icon slate"><svg aria-hidden="true"><use href="#icon-compass"/></svg></span>
+            <h3>Pais que querem agir cedo</h3>
+            <p>
+              Famílias que preferem compreender os sinais e agir cedo, em vez de apenas esperar que
+              as dificuldades desapareçam sozinhas.
+            </p>
+          </article>
         </div>
-      </div>
-
-      <div class="hero-scroll-cue" aria-hidden="true">
-        <span>Role</span>
-        <span class="line"></span>
       </div>
     </section>
 
@@ -407,10 +455,6 @@
             </div>
 
             <div class="esp-cta">
-              <p>
-                Cada criança tem uma forma única de se comunicar. A avaliação é o primeiro passo
-                para compreender suas necessidades.
-              </p>
               <a
                 class="btn esp-cta-btn"
                 href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
@@ -418,7 +462,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                <svg class="btn-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+                <img class="btn-icon" src="images/whatsapp-white-icon.webp" alt="" width="24" height="24" />
                 Agendar avaliação
               </a>
             </div>
@@ -441,11 +485,11 @@
             />
             <p>
               Cada criança tem seu próprio ritmo de desenvolvimento, mas existem marcos importantes
-              que ajudam a acompanhar a evolução da comunicação. Quando a fala demora mais do que o
-              esperado para surgir ou evoluir, pode ser um sinal de atraso na linguagem. Nesses
-              casos, a avaliação fonoaudiológica permite identificar as necessidades da criança e
-              estimular, de forma lúdica e individualizada, o desenvolvimento da compreensão e da
-              fala, favorecendo uma comunicação mais eficiente no dia a dia.
+              que ajudam a acompanhar a evolução da comunicação. Quando o desenvolvimento da fala
+              acontece de forma mais lenta do que o esperado para a idade, é importante realizar uma
+              avaliação fonoaudiológica. A partir dessa avaliação, é possível identificar as
+              necessidades individuais e promover, de forma lúdica e personalizada, o
+              desenvolvimento da fala e da comunicação.
             </p>
           </article>
 
@@ -492,105 +536,12 @@
               face, responsáveis por funções como respirar, mastigar, engolir e falar. Muitas
               famílias chegam ao consultório por encaminhamento do dentista, ortodontista ou médico
               otorrinolaringologista, especialmente quando a criança apresenta respiração pela boca,
-              dificuldade para mastigar, língua entre os dentes, uso prolongado de chupeta ou
-              mamadeira, alterações na mordida ou dificuldade para manter os lábios fechados em
-              repouso. O acompanhamento fonoaudiológico busca restabelecer o equilíbrio dessas
-              funções, contribuindo para um desenvolvimento saudável e complementando o tratamento
-              realizado por esses profissionais.
+              dificuldade para mastigar, uso prolongado de chupeta ou mamadeira, língua entre os
+              dentes ou alterações na mordida. O acompanhamento fonoaudiológico busca restabelecer o
+              equilíbrio dessas funções, contribuindo para um desenvolvimento saudável e
+              complementando o tratamento realizado por esses profissionais.
             </p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================
-         Para quem é
-         ========================================================== -->
-    <section class="section" id="para-quem" aria-labelledby="para-quem-title">
-      <div class="container">
-        <div class="section-head center" data-reveal>
-          <p class="eyebrow">Para quem é</p>
-          <h2 id="para-quem-title" class="font-display">Você reconhece alguma dessas situações?</h2>
-          <p class="lede" style="margin-inline:auto;">
-            Famílias que querem entender o que observar, agir cedo e caminhar junto com quem cuida do
-            desenvolvimento dos seus filhos.
-          </p>
-        </div>
-
-        <div class="para-quem-media" data-reveal>
-          <video muted loop playsinline autoplay preload="metadata" poster="images/para-quem-e.jpg" aria-hidden="true">
-            <source src="videos/para-quem-e.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <div class="card-grid" data-reveal-group>
-          <article class="card" data-reveal>
-            <span class="card-icon"><svg aria-hidden="true"><use href="#icon-baby"/></svg></span>
-            <h3>Crianças de 3 a 10 anos</h3>
-            <p>
-              Em fase de desenvolvimento, pré-alfabetização e alfabetização, momento em que fala,
-              linguagem e função orofacial se estruturam juntas.
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card-icon terracotta"><svg aria-hidden="true"><use href="#icon-shuffle"/></svg></span>
-            <h3>Trocas na fala</h3>
-            <p>Crianças que já falam, mas trocam ou substituem sons na hora de se comunicar.</p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card-icon slate"><svg aria-hidden="true"><use href="#icon-clock"/></svg></span>
-            <h3>Atraso na fala e na linguagem</h3>
-            <p>
-              Crianças que falam menos do que o esperado para a idade ou ainda não formam frases
-              simples.
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card-icon"><svg aria-hidden="true"><use href="#icon-wind"/></svg></span>
-            <h3>Alterações de motricidade orofacial</h3>
-            <p>
-              Crianças com dificuldades relacionadas à sucção, mastigação, respiração ou postura de
-              língua e lábios, que podem impactar a fala.
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card-icon terracotta"><svg aria-hidden="true"><use href="#icon-cap"/></svg></span>
-            <h3>Escolas particulares e bilíngues</h3>
-            <p>
-              Famílias inseridas em escolas com propostas pedagógicas diferenciadas e que valorizam
-              acompanhamento especializado e intervenção precoce.
-            </p>
-          </article>
-
-          <article class="card" data-reveal>
-            <span class="card-icon slate"><svg aria-hidden="true"><use href="#icon-compass"/></svg></span>
-            <h3>Pais que querem agir, não apenas esperar</h3>
-            <p>
-              Famílias que preferem compreender os sinais e agir cedo, em vez de simplesmente esperar
-              que as dificuldades desapareçam sozinhas.
-            </p>
-          </article>
-        </div>
-
-        <p class="section-closer" data-reveal style="font-size:0.9rem;">
-          As situações acima têm caráter informativo, para ajudar a família a reconhecer sinais de
-          atenção — não substituem uma avaliação individualizada nem representam diagnóstico.
-        </p>
-
-        <div class="section-foot" data-reveal>
-          <a
-            class="btn btn-lg"
-            href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
-            data-wa
-            target="_blank"
-            rel="noopener"
-          >
-            Agendar avaliação
-          </a>
         </div>
       </div>
     </section>
@@ -604,8 +555,29 @@
           <p class="eyebrow">Como funciona</p>
           <h2 id="como-funciona-title" class="font-display">O caminho do primeiro contato ao progresso</h2>
           <p class="lede" style="margin-inline:auto;">
-            Seis etapas claras, da conversa inicial ao acompanhamento contínuo dos resultados.
+            Seis etapas claras, da conversa inicial ao acompanhamento<br />
+            contínuo dos resultados.
           </p>
+        </div>
+
+        <div class="como-funciona-video" data-reveal>
+          <div
+            class="video-player"
+            data-yt-player="VnvF2Zv__ww"
+            data-yt-title="Vídeo explicativo: avaliação personalizada"
+          >
+            <img
+              class="video-player-thumb"
+              src="https://i.ytimg.com/vi/VnvF2Zv__ww/hqdefault.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <button class="video-player-btn" type="button" aria-label="Reproduzir vídeo: avaliação personalizada">
+              <span class="play-circle">
+                <svg aria-hidden="true"><use href="#icon-play"/></svg>
+              </span>
+            </button>
+          </div>
         </div>
 
         <div class="steps-grid" data-reveal-group>
@@ -614,18 +586,22 @@
             <span class="card-icon"><svg aria-hidden="true"><use href="#icon-chat"/></svg></span>
             <h3>Conversa inicial</h3>
             <p>
-              Entendemos a rotina da criança, as dúvidas da família e o que motivou a busca por uma
-              avaliação.
+              Contempla a coleta de informações referentes à história da criança e da família,
+              incluindo aspectos do desenvolvimento, experiências, rotina, hábitos, necessidades e
+              motivos relacionados à busca pela avaliação.
             </p>
           </article>
 
           <article class="step-card" data-reveal>
             <span class="step-number">02</span>
             <span class="card-icon terracotta"><svg aria-hidden="true"><use href="#icon-search"/></svg></span>
-            <h3>Avaliação completa</h3>
+            <h3>Avaliação personalizada</h3>
             <p>
-              Investigação da fala, da linguagem e, quando necessário, da motricidade orofacial —
-              respiração, sucção e mastigação — com fundamentação em evidências científicas.
+              A avaliação fonoaudiológica é construída a partir da história, da queixa e das
+              características de cada paciente. São investigados os aspectos relevantes para a
+              compreensão do caso, com a seleção criteriosa de instrumentos e procedimentos
+              fundamentados em evidências científicas. O objetivo é compreender as demandas de cada
+              paciente e direcionar uma intervenção adequada.
             </p>
           </article>
 
@@ -644,30 +620,67 @@
             <span class="card-icon"><svg aria-hidden="true"><use href="#icon-waveform"/></svg></span>
             <h3>Sessões terapêuticas</h3>
             <p>
-              Estímulo técnico e lúdico, adaptado ao perfil da criança, com participação ativa da
-              família no processo.
+              Intervenções individualizadas que combinam estímulos técnicos e atividades lúdicas,
+              planejadas de acordo com o perfil e as necessidades da criança, promovendo seu
+              desenvolvimento com a participação ativa da família em todas as etapas do processo.
             </p>
           </article>
 
           <article class="step-card" data-reveal>
             <span class="step-number">05</span>
-            <span class="card-icon terracotta"><svg aria-hidden="true"><use href="#icon-cap"/></svg></span>
-            <h3>Orientação para casa e escola</h3>
+            <span class="card-icon terracotta"><svg aria-hidden="true"><use href="#icon-baby"/></svg></span>
+            <h3>Orientações aos pais e atividades para casa</h3>
             <p>
-              Atividades práticas para favorecer a continuidade do progresso entre as sessões e
-              alinhamento com professores quando necessário.
+              Orientações e propostas de atividades para serem realizadas pela família, com o
+              objetivo de estimular e dar continuidade às habilidades desenvolvidas nas sessões.
             </p>
           </article>
 
           <article class="step-card" data-reveal>
             <span class="step-number">06</span>
-            <span class="card-icon slate"><svg aria-hidden="true"><use href="#icon-trending-up"/></svg></span>
-            <h3>Acompanhamento dos resultados</h3>
+            <span class="card-icon slate"><svg aria-hidden="true"><use href="#icon-cap"/></svg></span>
+            <h3>Articulação com a escola</h3>
             <p>
-              Ajustes no plano terapêutico conforme a evolução da criança, com comunicação constante
-              sobre o progresso.
+              Comunicação e troca de informações com professores e equipe escolar, visando alinhar
+              estratégias, compartilhar observações e construir ações conjuntas que favoreçam a
+              continuidade do desenvolvimento do aluno no ambiente escolar.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Recursos fonoaudiológicos
+         ========================================================== -->
+    <section class="section" id="recursos" aria-labelledby="recursos-title">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <p class="eyebrow">Recursos</p>
+          <h2 id="recursos-title" class="font-display" style="color: var(--color-terracotta-600);">Recursos fonoaudiológicos</h2>
+          <p class="lede" style="margin-inline:auto;">
+            Conheça os recursos que potencializam cada etapa do processo terapêutico.
+          </p>
+        </div>
+
+        <div class="como-funciona-video" data-reveal>
+          <div
+            class="video-player"
+            data-yt-player="WaBvXv-ss_0"
+            data-yt-title="Recursos fonoaudiológicos utilizados no atendimento"
+          >
+            <img
+              class="video-player-thumb"
+              src="https://i.ytimg.com/vi/WaBvXv-ss_0/hqdefault.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <button class="video-player-btn" type="button" aria-label="Reproduzir vídeo: recursos fonoaudiológicos">
+              <span class="play-circle">
+                <svg aria-hidden="true"><use href="#icon-play"/></svg>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -697,31 +710,31 @@
             <ul class="benefits-list" data-reveal-group>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Fala mais clara e uma comunicação mais confiante</p>
+                <p>A família compreende o desenvolvimento infantil e participa das decisões com mais conhecimento e segurança</p>
               </li>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Funções orofaciais, como respirar, mastigar e sugar, trabalhadas de forma integrada à fala</p>
+                <p>A criança desenvolve uma comunicação mais eficiente, fortalecendo sua autonomia, participação e autoconfiança</p>
               </li>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Base mais sólida para a alfabetização</p>
+                <p>A rotina da família passa a fazer parte da terapia, transformando momentos do dia a dia em oportunidades de desenvolvimento</p>
               </li>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Menos ansiedade e mais clareza para a família</p>
+                <p>Uma comunicação mais eficiente fortalece a fala e prepara a criança para novos desafios, como a alfabetização</p>
               </li>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Atividades práticas para favorecer o progresso em casa</p>
+                <p>Família, escola e profissionais caminham na mesma direção por meio da gestão de caso</p>
               </li>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Alinhamento contínuo entre terapia, família e escola</p>
+                <p>A família ganha autonomia para favorecer o desenvolvimento da criança muito além das sessões</p>
               </li>
               <li class="benefit-item" data-reveal>
                 <span class="benefit-check"><svg aria-hidden="true"><use href="#icon-check"/></svg></span>
-                <p>Metodologia baseada em evidências, adaptada a cada criança</p>
+                <p>Cada decisão terapêutica é individualizada, baseada em evidências e construída para as necessidades de cada criança</p>
               </li>
             </ul>
           </div>
@@ -774,67 +787,15 @@
               src="images/tatiana-retrato.jpg"
               alt="Retrato de Tatiana Murari, fonoaudióloga infantil"
               loading="lazy"
-              width="1200"
-              height="1800"
+              width="1000"
+              height="1501"
             />
             <ul class="about-credentials">
               <li>Pós-graduação em Fala Infantil</li>
               <li>Graduada pela Universidade de São Paulo — USP</li>
               <li>Mestre em Fisiopatologia Experimental pela Faculdade de Medicina da USP</li>
             </ul>
-          </div>
-
-          <div class="about-copy" data-reveal>
-            <p class="eyebrow">Sobre</p>
-            <h2 id="sobre-title" class="font-display" style="margin-bottom: 0.4rem;">Tatiana Murari</h2>
-
-            <p>
-              Sou Tatiana Murari, esposa e mãe da Ana Clara e do Felipe.
-            </p>
-            <p>
-              Minha trajetória na fonoaudiologia começou em 1998, na USP, em Bauru, onde me formei e
-              iniciei minha atuação na área de Audiologia. Posteriormente, concluí o mestrado em
-              Fisiopatologia Experimental pela Faculdade de Medicina da USP.
-            </p>
-            <p>Um tempo depois, escolhi viver outro chamado: a maternidade.</p>
-            <p>
-              Quando decidi retomar minha carreira, voltei aos estudos com uma pós-graduação em Saúde
-              Coletiva e atuei por cinco anos no SUS. Essa experiência me reconectou à essência da
-              profissão: transformar vidas por meio da comunicação.
-            </p>
-            <p>
-              Nesse período, coordenei equipes e participei da elaboração de protocolos relacionados ao
-              Transtorno do Espectro Autista — TEA — e à anquiloglossia, conhecida como língua presa.
-            </p>
-            <p>
-              Também conciliei o trabalho com uma nova especialização em Gestão em Saúde pelo Hospital
-              Israelita Albert Einstein.
-            </p>
-            <p>
-              Hoje estou à frente do consultório Tatiana Murari Fonoaudiologia, localizado na Vila
-              Leopoldina, onde atuo de forma especializada nos Transtornos dos Sons da Fala.
-            </p>
-            <p>
-              Essa especialização me permite desenvolver intervenções mais assertivas,
-              individualizadas e eficazes, buscando otimizar o processo terapêutico e os resultados de
-              cada criança.
-            </p>
-            <p>
-              Além do atendimento clínico, desenvolvo projetos de conscientização em escolas sobre o
-              desenvolvimento da fala e a importância da intervenção precoce.
-            </p>
-            <p>
-              Minha missão é devolver às crianças o poder de se expressarem plenamente e com
-              confiança, unindo técnica, sensibilidade e propósito em cada atendimento.
-            </p>
-
-            <div class="pill-list about-tags">
-              <span class="pill">Fala e linguagem</span>
-              <span class="pill">Motricidade orofacial</span>
-              <span class="pill">Trocas e atrasos na fala</span>
-            </div>
-
-            <div>
+            <div class="about-portrait-cta">
               <a
                 class="btn btn-lg"
                 href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
@@ -846,7 +807,88 @@
               </a>
             </div>
           </div>
+
+          <div class="about-copy" data-reveal>
+            <p class="eyebrow">Sobre</p>
+            <h2 id="sobre-title" class="font-display" style="margin-bottom: 0.4rem;">Tatiana Murari</h2>
+
+            <p>
+              Antes de ser fonoaudióloga, sou mãe do Felipe e da Ana Clara. A maternidade
+              transformou profundamente a minha forma de enxergar a infância, o desenvolvimento
+              infantil e o papel da família na construção da história de uma criança.
+            </p>
+            <p>
+              Sou fonoaudióloga, graduada pela Universidade de São Paulo (USP), com pós-graduação em
+              Fala Infantil e mestrado em Fisiopatologia Experimental pela Faculdade de Medicina da
+              USP. Minha trajetória sempre foi guiada pelo compromisso com a ciência e pela busca
+              constante das melhores evidências para oferecer um cuidado ético, individualizado e de
+              excelência.
+            </p>
+            <p>Mas foi a experiência de ser mãe que deu um novo significado a tudo o que aprendi como profissional.</p>
+            <p>
+              Compreendi que o desenvolvimento não acontece apenas dentro do consultório. Ele
+              acontece nas conversas do dia a dia, nas brincadeiras compartilhadas, nos momentos de
+              cuidado, nos limites, no afeto, na presença e nas experiências que uma família constrói
+              ao longo da infância.
+            </p>
+            <p>Foi nesse encontro entre a ciência e a maternidade que encontrei a minha missão.</p>
+            <p>
+              Hoje, mais do que acompanhar o desenvolvimento da fala, caminho ao lado das famílias
+              para que elas compreendam seus filhos, participem das decisões com segurança e se
+              tornem protagonistas dessa jornada.
+            </p>
+            <p>
+              Acredito que nenhum conhecimento é maior do que o amor entre pais e filhos. O meu papel
+              é transformar o conhecimento científico em orientação, clareza e confiança, para que
+              esse amor encontre direção e se transforme em oportunidades reais de desenvolvimento.
+            </p>
+            <p>
+              Por isso, minha prática une educação continuada para as famílias, gestão de caso, um
+              olhar integral para a criança e atuação baseada em evidências. Cada decisão terapêutica
+              respeita a singularidade de cada criança e busca integrar família, escola e demais
+              profissionais em um mesmo propósito.
+            </p>
+            <p>
+              Porque acredito que uma criança que é compreendida desenvolve confiança para se
+              comunicar. E uma família que compreende seu filho não transforma apenas a fala:
+              transforma a forma de viver a infância — um tempo breve, mas capaz de deixar marcas
+              para toda a vida.
+            </p>
+
+            <div class="pill-list about-tags">
+              <span class="pill">Fala e linguagem</span>
+              <span class="pill">Motricidade orofacial</span>
+              <span class="pill">Trocas e atrasos na fala</span>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Faixa final — reforço antes do Contato
+         ========================================================== -->
+    <section class="section section-dark final-cta-bg" aria-label="Você deseja agir precocemente pelo seu filho?">
+      <div class="container final-cta" data-reveal>
+        <p class="final-cta-text">
+          Se você tem dúvidas sobre o desenvolvimento da fala, da comunicação ou das funções orais
+          do seu filho, uma avaliação fonoaudiológica pode trazer respostas e indicar o melhor
+          caminho.
+        </p>
+        <p class="final-cta-text">
+          Se você deseja agir precocemente e entender melhor o desenvolvimento do seu filho, este
+          espaço é para você.
+        </p>
+        <a
+          class="btn btn-invert btn-lg"
+          href="https://wa.me/5511942626054?text=Ol%C3%A1%2C%20Tatiana.%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20infantil."
+          data-wa
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="btn-icon" src="images/whatsapp-white-icon.webp" alt="" width="24" height="24" />
+          Agendar avaliação
+        </a>
       </div>
     </section>
 
@@ -857,7 +899,7 @@
       <div class="container">
         <div class="section-head center" data-reveal>
           <p class="eyebrow">Contato</p>
-          <h2 id="contato-title" class="font-display">Vamos conversar sobre o seu filho</h2>
+          <h2 id="contato-title" class="font-display">Vamos conversar sobre<br />o seu filho</h2>
           <p class="lede" style="margin-inline:auto;">
             Atendimento individualizado e presencial na Vila Leopoldina. Entre em contato para agendar
             uma avaliação ou esclarecer suas dúvidas.
@@ -996,6 +1038,7 @@
         <div>
           <p class="footer-heading">Navegação</p>
           <nav class="footer-links" aria-label="Navegação do rodapé">
+            <a href="#para-quem">Para quem é</a>
             <a href="#especialidades">Especialidades</a>
             <a href="#como-funciona">Como funciona</a>
             <a href="#resultados">Resultados</a>

@@ -184,60 +184,28 @@ function initReveal() {
   });
 }
 
-/* ---------- Hero: vídeo em autoplay/loop + efeito b-roll (zoom no scroll) ----------
-   O vídeo toca sozinho, mudo, em loop. Um leve zoom acompanha o progresso
-   do scroll dentro da seção hero (0 no topo, 1 quando o hero termina de
-   rolar para fora) — ver --hero-zoom em css/style.css.
-   O placeholder é o estado padrão (ver CSS) — só some quando o vídeo
-   confirma que carregou de verdade (loadeddata), então sem vídeo real em
-   videos/hero.mp4, sem JS, ou com prefers-reduced-motion, a imagem de
-   fallback permanece visível em vez de um retângulo vazio. */
-function initHeroScrollVideo() {
-  const hero = document.querySelector(".hero");
-  const video = document.querySelector("[data-hero-video]");
-  const fallback = document.querySelector("[data-hero-fallback]");
-  if (!hero || !video || !fallback) return;
+/* ---------- Players de vídeo do YouTube ("lite embed") ----------
+   Cada [data-yt-player] mostra só a miniatura + botão de play; o iframe
+   real do YouTube (nocookie, sem rastreio de terceiros até o clique) só é
+   criado quando o usuário clica, para não pesar o carregamento da página. */
+function initYoutubePlayers() {
+  document.querySelectorAll("[data-yt-player]").forEach((wrap) => {
+    const btn = wrap.querySelector(".video-player-btn");
+    if (!btn) return;
 
-  if (prefersReducedMotion) {
-    video.setAttribute("aria-hidden", "true");
-    video.remove();
-    return;
-  }
-
-  const sources = video.querySelectorAll("source");
-  if (!sources.length) return;
-
-  const MAX_ZOOM = 0.14; // termina em scale(1.14)
-  let ticking = false;
-
-  const update = () => {
-    const heroHeight = hero.offsetHeight || 1;
-    const progress = Math.min(Math.max(-hero.getBoundingClientRect().top / heroHeight, 0), 1);
-    hero.style.setProperty("--hero-zoom", (1 + progress * MAX_ZOOM).toFixed(4));
-    ticking = false;
-  };
-
-  const requestUpdate = () => {
-    if (!ticking) {
-      requestAnimationFrame(update);
-      ticking = true;
-    }
-  };
-
-  video.addEventListener("loadeddata", () => {
-    fallback.style.display = "none";
+    btn.addEventListener("click", () => {
+      const videoId = wrap.getAttribute("data-yt-player");
+      const title = wrap.getAttribute("data-yt-title") || "Vídeo";
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+      iframe.title = title;
+      iframe.loading = "lazy";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      wrap.innerHTML = "";
+      wrap.appendChild(iframe);
+    });
   });
-
-  video.addEventListener("error", () => {
-    /* fonte ausente ou inválida: placeholder permanece visível */
-  });
-
-  video.play().catch(() => {
-    /* autoplay bloqueado: mantém o placeholder visível até haver dados */
-  });
-
-  window.addEventListener("scroll", requestUpdate, { passive: true });
-  update();
 }
 
 /* ---------- Depoimentos ---------- */
@@ -393,7 +361,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTestimonialCarousel();
   hydrateContact(); // reaplica links do WhatsApp após render dos depoimentos, se necessário
   initReveal();
-  initHeroScrollVideo();
+  initYoutubePlayers();
   initEspecialidadesScroll();
   initMapLoader();
 });
