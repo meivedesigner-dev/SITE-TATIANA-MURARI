@@ -778,6 +778,7 @@ textarea:focus-visible,
   height: calc(100vh - var(--header-h-compact));
   display: flex;
   align-items: center;
+  min-width: 0;
 }
 
 .esp-sticky-inner {
@@ -786,6 +787,12 @@ textarea:focus-visible,
   justify-content: space-between;
   gap: 2.5rem;
   height: min(700px, 82vh);
+  min-width: 0;
+  width: 100%;
+}
+
+.esp-sticky-inner > div {
+  min-width: 0;
 }
 
 .esp-title {
@@ -976,6 +983,8 @@ textarea:focus-visible,
     margin-top: 1.6rem;
     padding-bottom: 0.3rem;
     scrollbar-width: none;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .esp-nav::-webkit-scrollbar {
