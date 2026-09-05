@@ -1110,6 +1110,10 @@ textarea:focus-visible,
   margin-bottom: clamp(3rem, 6vw, 4.5rem);
 }
 
+#recursos .como-funciona-video {
+  max-width: 792px;
+}
+
 .steps-grid {
   --timeline-gap: clamp(1.5rem, 3.5vw, 3.2rem);
   position: relative;
