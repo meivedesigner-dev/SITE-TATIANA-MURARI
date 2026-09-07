@@ -496,6 +496,9 @@ textarea:focus-visible,
   /* Mesmo eixo do container do hero (1100px), para header e conteúdo
      ficarem alinhados na mesma largura/margens em qualquer viewport. */
   max-width: 1100px;
+  /* Sem padding próprio — a logo fica exatamente na mesma borda
+     esquerda do vídeo/título do hero (que também não tem padding). */
+  padding-inline: 0;
 }
 
 .brand {
@@ -1947,6 +1950,10 @@ ul.contact-notes {
   }
 
   .hero-narrow {
+    padding-inline: 1.25rem;
+  }
+
+  .site-header .container {
     padding-inline: 1.25rem;
   }
 
