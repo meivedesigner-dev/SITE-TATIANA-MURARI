@@ -11,8 +11,8 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#335952" />
 
-  <!-- SEO: substituir pela URL definitiva do site antes da publicação -->
-  <link rel="canonical" href="https://www.tatianamurarifono.com.br/" />
+  <!-- SEO: endereço oficial = versão sem www (o www redireciona para cá no Netlify) -->
+  <link rel="canonical" href="https://tatianamurarifono.com.br/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -23,9 +23,12 @@
     property="og:description"
     content="Atendimento presencial em fonoaudiologia infantil na Vila Leopoldina, São Paulo. Avaliação e intervenção em fala, linguagem, trocas na fala e motricidade orofacial."
   />
-  <!-- PLACEHOLDER: substituir por imagem real 1200x630px antes de publicar -->
-  <meta property="og:image" content="/images/og-share.jpg" />
-  <meta property="og:url" content="https://www.tatianamurarifono.com.br/" />
+  <!-- Imagem de compartilhamento 1200x630px (recorte do retrato; pode ser trocada por arte) -->
+  <meta property="og:image" content="https://tatianamurarifono.com.br/images/og-share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Tatiana Murari, fonoaudióloga infantil" />
+  <meta property="og:url" content="https://tatianamurarifono.com.br/" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Fonoaudiologia Infantil na Vila Leopoldina | Tatiana Murari" />
@@ -33,7 +36,7 @@
     name="twitter:description"
     content="Atendimento presencial em fonoaudiologia infantil na Vila Leopoldina, São Paulo."
   />
-  <meta name="twitter:image" content="/images/og-share.jpg" />
+  <meta name="twitter:image" content="https://tatianamurarifono.com.br/images/og-share.jpg" />
 
   <!-- Favicon: ícone real da marca (recortado a partir de ICON.png) -->
   <link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png" />
@@ -48,23 +51,20 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <!--
-    SEO estruturado — PLACEHOLDER.
-    Tipo escolhido provisoriamente: MedicalClinic (mais próximo de uma clínica
-    de saúde com especialidade). Validar com o time de SEO/jurídico se
-    "MedicalBusiness", "ProfessionalService" ou uma combinação é mais adequada
-    antes da publicação definitiva. Confirmar também telefone, endereço e
-    redes antes de enviar ao Google Search Console.
+    SEO estruturado (dados para o Google). Sem "aggregateRating": o Google não
+    aceita que o próprio negócio declare suas avaliações; elas vêm do Perfil
+    da Empresa no Google.
   -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Tatiana Murari Fonoaudiologia Infantil",
-      "description": "Consultório de fonoaudiologia infantil na Vila Leopoldina, São Paulo, especializado em fala, linguagem, transtornos dos sons da fala e motricidade orofacial. Atendimento exclusivamente presencial para crianças de 3 a 10 anos.",
-      "url": "https://www.tatianamurarifono.com.br/",
+      "description": "Consultório de fonoaudiologia infantil na Vila Leopoldina, São Paulo, especializado em fala, linguagem, transtornos dos sons da fala, motricidade orofacial e habilitação e reabilitação auditiva. Atendimento exclusivamente presencial para crianças de 3 a 10 anos.",
+      "url": "https://tatianamurarifono.com.br/",
       "telephone": "+5511942626054",
       "priceRange": "$$",
-      "image": "/images/og-share.jpg",
+      "image": "https://tatianamurarifono.com.br/images/og-share.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Imperatriz Leopoldina, 957 — Conjunto 2506",
@@ -78,11 +78,6 @@
         "name": "Vila Leopoldina, São Paulo, SP"
       },
       "sameAs": ["https://www.instagram.com/tatianamurarifono/"],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "11"
-      },
       "employee": {
         "@type": "Person",
         "name": "Tatiana Murari",

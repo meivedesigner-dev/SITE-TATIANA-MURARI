@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tatianamurarifono.com.br/sitemap.xml
